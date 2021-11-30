@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+}
+
+body {
+    padding: 1rem;
+}
+
+#primera {
+    background-color: red;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#contenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+#segunda {
+    background-color: green;
+    height: 300px;
+    width: 100%;
+}
+
+#tercera {
+    background-color: blue;
+    color: white;
+}
+
+#tercera p {
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /*Mis reglas de estilos cuando estoy en una tableta*/
+    #contenedor {
+        flex-direction: row;
+    }
+
+    #segunda {
+        display: inline-block;
+        width: 50%;
+    }
+
+    #tercera {
+        background-color: lightblue;
+        height: 300px;
+        width: 49%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #contenedor {
+        flex-direction: row;
+    }
+
+    #segunda {
+        display: inline-block;
+        width: 30%;
+    }
+
+    #tercera {
+        background-color: lightblue;
+        height: 300px;
+        width: 70%;
+    }
+}
